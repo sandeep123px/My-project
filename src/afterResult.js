@@ -58,7 +58,9 @@ function AfterResult() {
                             <div className="dbshcbs">
                                 <h3>CourseList</h3>
                                 {v.courses_list == undefined ? (null) :(
+                                      
                                     v.courses_list.map((idx,i)=>{
+                                         if (i == 0 )
                                         return(
                                         <div className="review">{idx.course}</div>
                                         )
@@ -95,10 +97,15 @@ function AfterResult() {
                                 <h3>CourseList</h3>
                                 {v.courses_list == undefined ? (null) :(
                                     v.courses_list.map((idx,i,)=>{
+
+                                          if (i == 0){
+                                              
                                         return(
                                         <div className="review">{idx.course}</div>
                                         )
+                                    }
                                     })
+                                
                                 )}</div>
                             <div className="courselist">
                             <h3>Reviews</h3>
@@ -310,17 +317,15 @@ function AfterResult() {
                     }
                 
                    
-              
+                 
                 </div>
                
 
             </div>
-            
             </div>
-             )
+            
+    )
             }
     
     export default AfterResult;
     
-            
-           
