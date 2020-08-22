@@ -45,6 +45,8 @@ function AfterResult() {
         <div className="bigwhite">
             <Loader loader={loader}/>
             <div className="box1">
+                
+
                 <div className="subbox1">
             
                
@@ -60,7 +62,7 @@ function AfterResult() {
                                 {v.courses_list == undefined ? (null) :(
                                       
                                     v.courses_list.map((idx,i)=>{
-                                         if (i == 0 )
+                                         if (i == 1 )
                                         return(
                                         <div className="review">{idx.course}</div>
                                         )
@@ -126,6 +128,7 @@ function AfterResult() {
             </div>
 
             <div className="box1">
+
                 <div className="subbox1">
             
                

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import CoursesState from "./context/CourseState"
 import AfterResult from "./afterResult";
+import ApiCalls from './apiCalls'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <div className="bg">
       <Router>
         <Route path="/result" component={AfterResult}/>
+        <Route path="/api" component={ApiCalls}/>
         <NavigationBar />
         <main>
         <Switch>
